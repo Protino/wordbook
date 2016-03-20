@@ -1,0 +1,17 @@
+<resources>
+
+    <color name="myPrimaryColor">#212121</color>
+    <color name="myPrimaryDarkColor">#000</color>
+    <color name="myAccentColor">#009688</color>
+    <color name="myDrawerBackground">#303030</color>
+    <color name="myWindowBackground">#303030</color>
+    <color name="myTextPrimaryColor">#FFF</color>
+    <color name="myNavigationColor">#000</color>
+    <color name="accent_pressed">#004D40</color>
+    <color name="positive">#00C853</color>
+    <color name="negative">#D50000</color>
+    <color name="neutral">#FFD600</color>
+
+    <drawable name="pressed_gray">#0c000000</drawable>
+    <drawable name="selected_gray">#212121</drawable>
+</resources>

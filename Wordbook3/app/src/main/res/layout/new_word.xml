@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".TestFragmentActivity">
+
+    <EditText
+        android:id="@+id/etNewWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_actionbar"
+        android:hint="Title"
+        android:inputType="textCapWords|text"
+        android:paddingTop="16dp"
+        android:textColorHint="@color/hint_foreground_material_dark" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etNewWord"
+        android:gravity="top"
+        android:hint="Describe briefly..."
+        android:inputType="textCapSentences|textMultiLine"
+        android:lines="4"
+        android:paddingTop="16dp"
+        android:singleLine="false"
+        android:textColorHint="@color/hint_foreground_material_dark" />
+
+    <EditText
+        android:id="@+id/etExample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etDescription"
+        android:gravity="top"
+        android:hint="A sentence..."
+        android:inputType="textCapSentences|textMultiLine"
+        android:lines="2"
+        android:paddingTop="16dp"
+        android:textColorHint="@color/hint_foreground_material_dark" />
+
+
+    <TextView
+        android:id="@+id/tvEtymology"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etExample"
+        android:paddingTop="16dp"
+        android:text="Etymology"
+        android:textColor="@color/myTextPrimaryColor" />
+
+    <EditText
+        android:id="@+id/etEtymology"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEtymology"
+        android:paddingTop="16dp" />
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/etEtymology"-->
+    <!--android:paddingTop="16dp"-->
+    <!--android:text="Other forms"-->
+    <!--android:textColor="@color/myTextPrimaryColor" />-->
+
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEtymology"
+        android:paddingTop="16dp"
+        android:text="Type"
+        android:textColor="@color/myTextPrimaryColor" />
+<RadioGroup
+    android:id="@+id/rgType"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tvType"
+    android:orientation="horizontal">
+    <RadioButton
+        android:id="@+id/rbPositive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Positive"
+        android:textColor="@color/positive" />
+
+    <RadioButton
+        android:id="@+id/rbNeutral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Neutral"
+        android:checked="true"
+        android:textColor="@color/neutral"/>
+
+    <RadioButton
+        android:id="@+id/rbNegative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Negative"
+        android:textColor="@color/negative" />
+</RadioGroup>
+
+</RelativeLayout>
